@@ -44,26 +44,39 @@ const PROJECTS = [
     tech: ['Cloudflare Workers', 'TypeScript', 'Claude API', 'Stripe', 'Clerk Auth', 'MCP'],
     links: [
       { label: 'Try Free Scan', href: 'https://privacyguardmcp.com/scan' },
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
     ],
   },
   {
     title: 'Pilot Attrition Model',
-    description: 'Snowflake Cortex classification model for quarterly at-risk pilot predictions at Air Methods. Shifted from reactive to 3+ month early warning, $250K+ turnover cost impact per pilot.',
+    description: 'Snowflake Cortex classification model for quarterly at-risk pilot predictions. Shifted from reactive to 3+ month early warning, $250K+ turnover cost impact per pilot.',
     tech: ['Snowflake Cortex', 'Classification ML', 'Predictive Analytics'],
-    links: [],
+    links: [
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+    ],
   },
   {
     title: 'Client Attrition / Embeddings',
-    description: 'Pinecone vector DB with embeddings to identify at-risk retirement plan accounts via semantic similarity at Ascensus.',
+    description: 'Pinecone vector DB with embeddings to identify at-risk accounts via semantic similarity in retirement plan services.',
     tech: ['Pinecone', 'Vector Embeddings', 'Semantic Search', 'Python'],
-    links: [],
+    links: [
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+    ],
   },
   {
     title: 'LLM-Driven Analytics — USAID',
     description: 'Cortex Analyst + Snowflake for conversational NLP queries on global health supply chain data. Public Streamlit demo.',
     tech: ['Snowflake Cortex Analyst', 'Streamlit', 'NLP', 'Supply Chain Data'],
-    links: [],
+    links: [
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+    ],
   },
+]
+
+const ARTICLES = [
+  { title: 'Building an AI Swim Coach with Claude Vision API', href: 'https://medium.com/@paul.ccarson' },
+  { title: 'Building a Production MCP Server with Cloudflare Workers', href: 'https://medium.com/@paul.ccarson' },
+  { title: 'LLM-Driven Supply Chain Analytics with Snowflake Cortex', href: 'https://medium.com/@paul.ccarson' },
 ]
 
 function App() {
@@ -97,19 +110,17 @@ function App() {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <span className="hero-label">Cincinnati, OH</span>
             <h1>
-              Senior Data Engineer &<br />
-              <span className="accent">AI Engineer</span>
+              Paul Carson
             </h1>
+            <p className="hero-subtitle">AI Engineer & Senior Data Engineer</p>
             <p className="hero-tagline">
-              MCP Server Development &middot; Agentic Workflow Design &middot;
-              Building production AI systems, data pipelines, and agentic tools at
-              the intersection of enterprise data infrastructure and modern AI.
+              Building production AI systems, data pipelines, and agentic tools
+              at the intersection of enterprise data infrastructure and modern AI.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">View Projects</a>
-              <a href="#connect" className="btn btn-outline">Get in Touch</a>
+              <a href="#connect" className="btn btn-outline">Connect</a>
             </div>
           </div>
         </div>
@@ -122,15 +133,9 @@ function App() {
           <div className="about-content">
             <p>
               10+ years building cloud data platforms, pipelines, and analytics
-              solutions. Currently at Air Methods — the nation's largest air
-              medical transport provider — modernizing data infrastructure and
-              delivering predictive analytics. Also runs Turnberry Solutions LLC
-              for consulting engagements.
-            </p>
-            <p>
-              Background spans financial services (PNC, Fifth Third, Ascensus, WEX),
-              federal contracting (USAID via IT2 Solutions), and aviation (Air Methods).
-              Competitive masters swimmer.
+              solutions across financial services, federal contracting, and aviation.
+              Currently focused on AI/ML engineering, agentic workflow development,
+              and production LLM systems. Principal consultant at Turnberry Solutions LLC.
             </p>
             <div className="credentials">
               <span className="credential-tag">MBA</span>
@@ -193,19 +198,19 @@ function App() {
       <section id="writing">
         <div className="container">
           <h2 className="section-title">Writing</h2>
-          <div className="writing-card">
-            <p>
-              Technical articles on AI engineering, data pipelines, and
-              production ML systems.
-            </p>
-            <a
-              href="https://medium.com/@paul.ccarson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline"
-            >
-              Read on Medium →
-            </a>
+          <div className="articles-list">
+            {ARTICLES.map(article => (
+              <a
+                key={article.title}
+                href={article.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="article-card"
+              >
+                <span className="article-title">{article.title}</span>
+                <span className="article-link">Read on Medium →</span>
+              </a>
+            ))}
           </div>
         </div>
       </section>
