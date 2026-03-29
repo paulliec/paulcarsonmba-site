@@ -48,27 +48,20 @@ const PROJECTS = [
     ],
   },
   {
-    title: 'Pilot Attrition Model',
-    description: 'Snowflake Cortex classification model for quarterly at-risk pilot predictions. Shifted from reactive to 3+ month early warning, $250K+ turnover cost impact per pilot.',
-    tech: ['Snowflake Cortex', 'Classification ML', 'Predictive Analytics'],
-    links: [
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
-    ],
-  },
-  {
-    title: 'Client Attrition / Embeddings',
-    description: 'Pinecone vector DB with embeddings to identify at-risk accounts via semantic similarity in retirement plan services.',
-    tech: ['Pinecone', 'Vector Embeddings', 'Semantic Search', 'Python'],
-    links: [
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
-    ],
-  },
-  {
     title: 'LLM-Driven Analytics — USAID',
     description: 'Cortex Analyst + Snowflake for conversational NLP queries on global health supply chain data. Public Streamlit demo.',
     tech: ['Snowflake Cortex Analyst', 'Streamlit', 'NLP', 'Supply Chain Data'],
     links: [
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-business-intelligence-dashboard-with-snowflake-cortex-nlp-and-streamlit-1ed64937644e?sk=6019434d628f83bbd0485c108550c12a' },
+      { label: 'Live Demo', href: 'https://paulliec-usaid-shipment-data-usaid-q8on5x.streamlit.app/' },
+    ],
+  },
+  {
+    title: 'Sentiment Analysis — Google Reviews',
+    description: 'End-to-end NLP pipeline ingesting Google Places API review data into Snowflake via Azure Functions. VADER sentiment scoring plus unstructured data analysis to surface market insights by business category and location.',
+    tech: ['Python', 'Azure Functions', 'Snowflake', 'NLP', 'VADER', 'Streamlit'],
+    links: [
+      { label: 'Medium Article', href: 'https://medium.com/python-in-plain-english/step-by-step-sentiment-analysis-unveiling-market-mood-to-uncover-business-insights-c13bb3d63aa2?sk=acc5e4ab52df81ab9464bf668d5cec73' },
     ],
   },
 ]
@@ -136,14 +129,14 @@ function App() {
           <div className="about-content">
             <p>
               10+ years building cloud data platforms, pipelines, and analytics
-              solutions across financial services, federal contracting, and aviation.
+              solutions across financial services, federal contracting (global health supply chain distribution), and aviation.
               Currently focused on AI/ML engineering, agentic workflow development,
-              and production LLM systems. Principal consultant at Turnberry Solutions LLC.
+              and production LLM systems. Principal consultant at Data Dogs Consulting.
             </p>
             <p>
-              I started competing in masters swimming at 54 and approach both training and
-              engineering the same way — analytically, with obsessive attention to technique
-              and a belief that fundamentals compound over time.
+              I learned to swim as an adult and now compete on a masters swim team — I
+              approach both training and engineering the same way: analytically, with
+              attention to technique and a belief that fundamentals compound over time.
             </p>
             <div className="credentials">
               <span className="credential-tag">MBA</span>
