@@ -35,7 +35,7 @@ const PROJECTS = [
     tech: ['React/Vite', 'FastAPI', 'Claude Vision API', 'Snowflake', 'Cloudflare Pages', 'Fly.io'],
     links: [
       { label: 'Live App', href: 'https://ai-swim-coach.pages.dev' },
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-video-coaching-app-a-technical-deep-dive-4424779ba053?sk=a8a105b5778700a818af82478868db8a' },
     ],
   },
   {
@@ -44,7 +44,7 @@ const PROJECTS = [
     tech: ['Cloudflare Workers', 'TypeScript', 'Claude API', 'Stripe', 'Clerk Auth', 'MCP'],
     links: [
       { label: 'Try Free Scan', href: 'https://privacyguardmcp.com/scan' },
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson' },
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson/building-a-privacy-first-ai-platform-with-claude-mcp-c6a9b8216ae4?sk=51a53fb4ae00970d486ba5ee4c4a0f08' },
     ],
   },
   {
@@ -74,9 +74,12 @@ const PROJECTS = [
 ]
 
 const ARTICLES = [
-  { title: 'Building an AI Swim Coach with Claude Vision API', href: 'https://medium.com/@paul.ccarson' },
-  { title: 'Building a Production MCP Server with Cloudflare Workers', href: 'https://medium.com/@paul.ccarson' },
-  { title: 'LLM-Driven Supply Chain Analytics with Snowflake Cortex', href: 'https://medium.com/@paul.ccarson' },
+  { title: 'When \'Analyze This Video\' Stopped Being One API Call: Swim Coach App Follow-Up', href: 'https://medium.com/@paul.ccarson/when-analyze-this-video-stopped-being-one-api-call-swim-coach-app-follow-up-bff1f42cb258?sk=e54149135f95170033cef253adada8c7' },
+  { title: 'Building an AI-Powered Video Coaching App: A Technical Deep Dive', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-video-coaching-app-a-technical-deep-dive-4424779ba053?sk=a8a105b5778700a818af82478868db8a' },
+  { title: 'Building a Privacy-First AI Platform with Claude MCP', href: 'https://medium.com/@paul.ccarson/building-a-privacy-first-ai-platform-with-claude-mcp-c6a9b8216ae4?sk=51a53fb4ae00970d486ba5ee4c4a0f08' },
+  { title: 'Building an AI-Powered Business Intelligence Dashboard with Snowflake Cortex, NLP and Streamlit', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-business-intelligence-dashboard-with-snowflake-cortex-nlp-and-streamlit-1ed64937644e?sk=6019434d628f83bbd0485c108550c12a' },
+  { title: 'Step-by-Step Guide: Automating Google Reviews ETL with Azure Functions', href: 'https://medium.com/towardsdev/step-by-step-guide-automating-google-reviews-etl-with-azure-functions-f09cac27e32b?sk=110e9a1285112f4a28f02cdf38df5591' },
+  { title: 'Making Unstructured Data Work for You: Insights from Google Reviews with NLP', href: 'https://medium.com/@paul.ccarson/making-unstructured-data-work-for-you-insights-from-google-reviews-with-nlp-767d3fccb1f3?sk=a7b223242bdcb8bb5cc7959a5ec047b0' },
 ]
 
 function App() {
@@ -136,6 +139,11 @@ function App() {
               solutions across financial services, federal contracting, and aviation.
               Currently focused on AI/ML engineering, agentic workflow development,
               and production LLM systems. Principal consultant at Turnberry Solutions LLC.
+            </p>
+            <p>
+              I started competing in masters swimming at 54 and approach both training and
+              engineering the same way — analytically, with obsessive attention to technique
+              and a belief that fundamentals compound over time.
             </p>
             <div className="credentials">
               <span className="credential-tag">MBA</span>
