@@ -57,6 +57,16 @@ const PROJECTS = [
     ],
   },
   {
+    title: 'Attrition Intelligence — Snowflake Cortex ML',
+    description: 'End-to-end attrition prediction pipeline for hard-to-staff roles. Synthetic HR data plus NLP on exit survey text processed through Snowflake Cortex ML Classification. Bronze/silver/gold medallion architecture, automated retraining via Snowflake Tasks, Streamlit dashboard surfacing at-risk employees by role and region.',
+    tech: ['Snowflake', 'Cortex ML', 'Python', 'NLP', 'Streamlit', 'Data Vault'],
+    links: [
+      { label: 'Live Demo', href: 'https://meridian-attrition-demo.streamlit.app' },
+      { label: 'GitHub', href: 'https://github.com/paulliec/snowflake-cortex-ml' },
+      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson/your-employees-are-telling-you-theyre-leaving-you-re-just-not-listening-69b2e48a9c8f?sk=3d43c0fdde8f7ad8c8af01193d1a62db' },
+    ],
+  },
+  {
     title: 'Sentiment Analysis — Google Reviews',
     description: 'End-to-end NLP pipeline ingesting Google Places API review data into Snowflake via Azure Functions. VADER sentiment scoring plus unstructured data analysis to surface market insights by business category and location.',
     tech: ['Python', 'Azure Functions', 'Snowflake', 'NLP', 'VADER', 'Streamlit'],
