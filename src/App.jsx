@@ -49,9 +49,7 @@ const PROJECTS = [
     title: 'Global Health Shipment Analytics',
     description: 'Built demo. A Streamlit dashboard for exploring historical global health shipments through maps, delivery metrics, and natural-language questions.',
     tech: ['Snowflake Cortex Analyst', 'Streamlit', 'Python'],
-    links: [
-      { label: 'Read Case Study', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-business-intelligence-dashboard-with-snowflake-cortex-nlp-and-streamlit-1ed64937644e?sk=6019434d628f83bbd0485c108550c12a' },
-    ],
+    links: [],
   },
   {
     title: 'AI Swim Coach',
@@ -134,7 +132,7 @@ function App() {
             <h1>
               Paul Carson
             </h1>
-            <p className="hero-subtitle">Enterprise AI Engineer &amp; Technical Team Lead</p>
+            <p className="hero-subtitle">Enterprise AI &amp; Data Engineering</p>
             <p className="hero-tagline">
               I build AI workflows teams can verify, reuse, and operate.
             </p>
@@ -152,8 +150,9 @@ function App() {
           <h2 className="section-title">About</h2>
           <div className="about-content">
             <p>
-              I’m a hands-on engineering lead with over a decade of experience building cloud data platforms and analytics
-              across financial services, aviation, and global health. I mentor engineers, review designs, and work with
+              My work spans hands-on data engineering, enterprise AI delivery, and technical team leadership.
+              I’ve spent over a decade building cloud data platforms and analytics across financial services, aviation,
+              and global health. I mentor engineers, review designs, and work with
               business and platform teams to turn AI prototypes into workflows with clear success criteria,
               reusable components, and human review where it matters.
             </p>
