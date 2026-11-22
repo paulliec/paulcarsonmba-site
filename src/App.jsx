@@ -11,27 +11,51 @@ const NAV_ITEMS = [
 
 const SKILLS = [
   {
-    title: 'AI & Agent Tooling',
-    tags: ['Anthropic Claude API', 'Model Context Protocol', 'Claude Code', 'Multi-Agent Workflows', 'Pinecone', 'Vector Embeddings'],
+    title: 'Enterprise AI & Retrieval',
+    tags: ['Agentic Workflows', 'RAG', 'Document Intelligence', 'Model Context Protocol', 'LangGraph', 'Azure AI Search'],
   },
   {
-    title: 'Cloud & Data',
-    tags: ['Snowflake', 'Databricks', 'Azure', 'dbt', 'Data Vault 2.0', 'FastAPI'],
+    title: 'Governance & Evaluation',
+    tags: ['Agent Observability', 'Policy Design', 'Evaluation & Testing', 'Audit Trails', 'Human Review'],
   },
   {
-    title: 'Languages',
-    tags: ['Python', 'TypeScript', 'SQL', 'C#'],
+    title: 'Cloud & Data Engineering',
+    tags: ['Azure', 'Snowflake', 'Databricks', 'Python', 'SQL', 'dbt'],
   },
   {
-    title: 'Visualization',
-    tags: ['Power BI', 'Sigma', 'Streamlit'],
+    title: 'Technical Leadership',
+    tags: ['Design Reviews', 'Engineering Mentorship', 'Reusable Components', 'Developer Enablement', 'Business Discovery'],
   },
 ]
 
 const PROJECTS = [
   {
+    title: 'Agent Control Plane',
+    description: 'In development. A vendor-neutral toolkit that brings agent and MCP tool activity into one event model, reconstructs runs, and reports policy findings. It observes activity without enforcing policies at runtime.',
+    tech: ['Python', 'MCP', 'SQLite', 'Snowflake Telemetry'],
+    links: [
+      { label: 'View Repository', href: 'https://github.com/paulliec/agent-control-plane' },
+    ],
+  },
+  {
+    title: 'Fleet Ops AI',
+    description: 'Public prototype. A graph-based assistant for fleet operations. A document retrieval extension with checkable source citations is in development.',
+    tech: ['Python', 'LangGraph', 'Streamlit'],
+    links: [
+      { label: 'View Repository', href: 'https://github.com/paulliec/fleetops-ai' },
+    ],
+  },
+  {
+    title: 'Global Health Shipment Analytics',
+    description: 'Built demo. A Streamlit dashboard for exploring historical global health shipments through maps, delivery metrics, and natural-language questions.',
+    tech: ['Snowflake Cortex Analyst', 'Streamlit', 'Python'],
+    links: [
+      { label: 'Read Case Study', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-business-intelligence-dashboard-with-snowflake-cortex-nlp-and-streamlit-1ed64937644e?sk=6019434d628f83bbd0485c108550c12a' },
+    ],
+  },
+  {
     title: 'AI Swim Coach',
-    description: 'Full-stack AI app using Claude Vision API to analyze swimming technique from video. Multi-frame analysis, conversational coaching, and rate limiting.',
+    description: 'Built app. A video-analysis workflow that turns multiple frames into conversational feedback on swimming technique.',
     tech: ['React/Vite', 'FastAPI', 'Claude Vision API', 'Snowflake', 'Cloudflare Pages', 'Fly.io'],
     links: [
       { label: 'Live App', href: 'https://ai-swim-coach.pages.dev' },
@@ -40,7 +64,7 @@ const PROJECTS = [
   },
   {
     title: 'PrivacyGuardMCP',
-    description: 'One of the first production MCP servers — AI-powered data broker scanning and removal. 50+ data broker sources with free scan available.',
+    description: 'Built app. An MCP-based tool for discovering where data brokers list personal information and helping people take action on what they find.',
     tech: ['Cloudflare Workers', 'TypeScript', 'Claude API', 'Stripe', 'Clerk Auth', 'MCP'],
     links: [
       { label: 'Try Free Scan', href: 'https://privacyguardmcp.com/scan' },
@@ -48,17 +72,8 @@ const PROJECTS = [
     ],
   },
   {
-    title: 'LLM-Driven Analytics — USAID',
-    description: 'Cortex Analyst + Snowflake for conversational NLP queries on global health supply chain data. Public Streamlit demo.',
-    tech: ['Snowflake Cortex Analyst', 'Streamlit', 'NLP', 'Supply Chain Data'],
-    links: [
-      { label: 'Medium Article', href: 'https://medium.com/@paul.ccarson/building-an-ai-powered-business-intelligence-dashboard-with-snowflake-cortex-nlp-and-streamlit-1ed64937644e?sk=6019434d628f83bbd0485c108550c12a' },
-      { label: 'Live Demo', href: 'https://paulliec-usaid-shipment-data-usaid-q8on5x.streamlit.app/' },
-    ],
-  },
-  {
     title: 'Attrition Intelligence — Snowflake Cortex ML',
-    description: 'End-to-end attrition prediction pipeline for hard-to-staff roles. Synthetic HR data plus NLP on exit survey text processed through Snowflake Cortex ML Classification. Bronze/silver/gold medallion architecture, automated retraining via Snowflake Tasks, Streamlit dashboard surfacing at-risk employees by role and region.',
+    description: 'Built demo. End-to-end attrition prediction pipeline for hard-to-staff roles. Synthetic HR data plus NLP on exit survey text processed through Snowflake Cortex ML Classification. Bronze/silver/gold medallion architecture, automated retraining via Snowflake Tasks, Streamlit dashboard surfacing at-risk employees by role and region.',
     tech: ['Snowflake', 'Cortex ML', 'Python', 'NLP', 'Streamlit', 'Data Vault'],
     links: [
       { label: 'Live Demo', href: 'https://meridian-attrition-demo.streamlit.app' },
@@ -68,7 +83,7 @@ const PROJECTS = [
   },
   {
     title: 'Sentiment Analysis — Google Reviews',
-    description: 'End-to-end NLP pipeline ingesting Google Places API review data into Snowflake via Azure Functions. VADER sentiment scoring plus unstructured data analysis to surface market insights by business category and location.',
+    description: 'Built demo. End-to-end NLP pipeline ingesting Google Places API review data into Snowflake via Azure Functions. VADER sentiment scoring plus unstructured data analysis to surface market insights by business category and location.',
     tech: ['Python', 'Azure Functions', 'Snowflake', 'NLP', 'VADER', 'Streamlit'],
     links: [
       { label: 'Medium Article', href: 'https://medium.com/python-in-plain-english/step-by-step-sentiment-analysis-unveiling-market-mood-to-uncover-business-insights-c13bb3d63aa2?sk=acc5e4ab52df81ab9464bf668d5cec73' },
@@ -119,10 +134,9 @@ function App() {
             <h1>
               Paul Carson
             </h1>
-            <p className="hero-subtitle">AI Engineer & Senior Data Engineer</p>
+            <p className="hero-subtitle">Enterprise AI Engineer &amp; Technical Team Lead</p>
             <p className="hero-tagline">
-              Building production AI systems, data pipelines, and agentic tools
-              at the intersection of enterprise data infrastructure and modern AI.
+              I build AI workflows teams can verify, reuse, and operate.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">View Projects</a>
@@ -138,10 +152,10 @@ function App() {
           <h2 className="section-title">About</h2>
           <div className="about-content">
             <p>
-              10+ years building cloud data platforms, pipelines, and analytics
-              solutions across financial services, federal contracting (global health supply chain distribution), and aviation.
-              Currently focused on AI/ML engineering, agentic workflow development,
-              and production LLM systems. Principal consultant at Data Dogs Consulting.
+              I’m a hands-on engineering lead with over a decade of experience building cloud data platforms and analytics
+              across financial services, aviation, and global health. I mentor engineers, review designs, and work with
+              business and platform teams to turn AI prototypes into workflows with clear success criteria,
+              reusable components, and human review where it matters.
             </p>
             <p>
               I learned to swim as an adult and now compete on a masters swim team — I
